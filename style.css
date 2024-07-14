@@ -8,7 +8,7 @@ en las secciones señaladas */
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
    --cor-de-title__subsection:#464646;
-   --cor-de-about:#EAF2FD;
+   --cor-de-about:#deefff;
    --cor-de-skills:#e9ebf3;
    --cor-de-img:#FFFFFF;
    --cor-de-boton:#2A7AE4;
@@ -73,8 +73,8 @@ a{
 .title{      
     display: flex;
     align-items: center;  
-    height: 640px;
-    width: 90%;  
+    height:auto;
+    width: 100%;  
 }
 
 .title__div{    
@@ -93,28 +93,26 @@ a{
     margin: 10px 15px ;      
 }
 
-/*
+
 .title__container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items:flex-start;
+    border-style: dashed;
+    padding: 0px 20px;
 }
-    */
 
 .title__bio{
-    align-self: center;
-    font-weight:100;
-    font-size: 20px;        
-    margin:auto;
+    align-self:flex-start;
+    font-weight:bold;
+    font-size: 24px;        
     color: var(--cor-de-title__subsection);    
 }
 
 .title__sub{
-    align-self: center;
+    align-self: flex-start;
     font-weight:100;
-    font-size: 20px;        
-    margin:5%;
+    font-size: 21px;        
     color: var(--cor-de-title__subsection);    
 }
 
@@ -131,19 +129,32 @@ a{
 
 .about{
     display: flex;
+    align-items: center;
     width: 100%;
     background-color: var(--cor-de-about);
 }
 
+.about__container{
+    display:flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+
+.about__paragraph{
+    align-items: center;
+    display: flex;
+    font-size: 18px;        
+}
+
 /*Sección skills*/
 .skills{
-    align-items: center;
-    display: flex;    
+    display: flex;   
+    align-items: center; 
     flex-direction: column;
-    
-    padding: 50px 20px;
-    align-content: center;
-    
+    padding: 0px 0px;
+    justify-content: space-evenly;
+
 }
 
 .skills__title {
@@ -153,19 +164,23 @@ a{
 
 .skills__line{
     display: flex;
-    flex-wrap: wrap;
-    gap: 3px; 
-    margin: 3px 1px;
+    flex-wrap:wrap;
+    width:94%;
+    justify-content:space-between;
+    
 }
+
 
 .skills__box{   
     align-items: flex-end;
     display: flex;
     background-color: var(--cor-de-skills);
     height: 140px;
-    width: 160px;
-    margin: 0 5px;
-    margin-bottom: 15px;
+    width: 148px;
+    margin: 20px 20px;
+    border-color: var(--cor-de-about);
+    border-style:outset;
+    border-radius: 6px;
 }
 
 .skills__logo{
@@ -254,6 +269,7 @@ a{
 .formcontato{
     background-color: var(--cor-de-about);  
     width: 94%; 
+    min-height:auto;
 }
 
 .formcontato__contacto{
@@ -345,7 +361,8 @@ a{
         margin-right: 3%;
     }
     .title{
-        height: 274px;
+        height:auto;
+        margin-bottom: 10px;
     }
 
     .title__profile{
@@ -361,9 +378,9 @@ a{
         margin-left: 3%;
     }
 
-    .title__subsection{
+    .title__sub{
         align-self: flex-start;
-        font-size: 12px;        
+        font-size: 18px;        
         width: 90%;
         color: var(--cor-de-title__subsection);
         margin-left: 3%;
@@ -373,10 +390,36 @@ a{
     .menu__list__item{        
         display: none;
     }
-    .formcontato__img{
-        display: none;
-    }
+    
+    .formcontato{
+        background-color: var(--cor-de-about);
+        display: flex;  
+        flex-direction:column;
+        width: 94%; 
+        height: max-content;
+        justify-content:space-around;
 
+    }
+    
+    .formcontato__contacto{
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+        margin:40px;
+    }
+        
+    .formcontato--esquerda{
+        display: flex;
+        justify-content:center;
+        height:420px;
+        justify-content: space-around;
+        
+    }
+    .formcontato__img{
+      display:flex;
+        
+    }
+    
 
 }
 
@@ -405,12 +448,9 @@ a{
         font-weight: lighter;
     }
 
-    .title{      
-        display: flex;
-        flex-direction: row;
-        align-items: center;  
+    .title{         
         height: auto;
-        margin: 5px 5px;
+        margin-bottom: 10px;
         width: 100%;  
     }
 
@@ -438,21 +478,42 @@ a{
     }
     .title__subsection{
         align-self: center;
-        font-size: 12px;        
+        font-size: 18px;        
         width: 100%;
         color: var(--cor-de-title__subsection);
     }   
     .about__container{
         margin: 0 3px;
     } 
-    .about__paragraph{
-        align-items: center;
-        display: flex;
-        font-size: 14px;        
-    }
+    
 
+    .formcontato{
+        background-color: var(--cor-de-about);
+        display: flex;  
+        flex-direction:column;
+        width: 94%; 
+        height: max-content;
+        justify-content:space-around;
+
+    }
+    
+    .formcontato__contacto{
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+        margin:40px;
+    }
+        
+    .formcontato--esquerda{
+        display: flex;
+        justify-content:center;
+        height:420px;
+        justify-content: space-around;
+        
+    }
     .formcontato__img{
-        display: none;
+      display:flex;
+        
     }
 
 
