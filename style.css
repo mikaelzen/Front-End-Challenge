@@ -73,23 +73,16 @@ a{
 .title{      
     display: flex;
     align-items: center;  
-    height: 450px;
-    width: 100%;  
+    height: 640px;
+    width: 90%;  
 }
+
 .title__div{    
     display: flex;
     align-items: center;
-    width: 1136px;    
-    justify-content: space-around;
-    flex-direction: row-reverse;      
-}
-
-
-.title__container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    width:auto;    
+    flex-direction: row-reverse; 
+  
 }
 
 .title__profile{
@@ -100,31 +93,38 @@ a{
     margin: 10px 15px ;      
 }
 
-/* .skills__box{
+/*
+.title__container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 94%; 
-} */
+    align-items: center;
+
+}
+    */
 
 .title__bio{
     align-self: center;
-    font-weight:bold;
-    font-size: 40px;        
-    margin:5%;    
+    font-weight:100;
+    font-size: 20px;        
+    margin:auto;
+    color: var(--cor-de-title__subsection);    
 }
-.title__subsection{
+
+.title__sub{
     align-self: center;
-    font-size: 28px;
-    width: 75%;
-    color: var(--cor-de-title__subsection);
+    font-weight:100;
+    font-size: 20px;        
+    margin:5%;
+    color: var(--cor-de-title__subsection);    
 }
+
+
 .title__network{    
     align-items: center;
     display: flex;
     flex-flow: row;
     gap: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /*Sección About*/
